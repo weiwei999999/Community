@@ -1,6 +1,6 @@
 实训文件库
 
-包名：
+包名：csu.service.community
 
 资源放在 resources
 
