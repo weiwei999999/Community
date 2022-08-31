@@ -1,4 +1,4 @@
-package csu.service.community;
+package csu.train.community;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

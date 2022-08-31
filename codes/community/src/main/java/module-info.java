@@ -1,11 +1,9 @@
-module csu.service.community {
+module csu.train.community {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens csu.service.community to javafx.fxml;
-    exports csu.service.community;
-    exports csu.service.community.citizen;
-    exports csu.service.community.worker;
-    exports csu.service.community.login;
+    opens csu.train.community to javafx.fxml;
+    exports csu.train.community;
+    exports csu.train.community.views;
 }

@@ -1,4 +1,4 @@
-package csu.service.community;
+package csu.train.community;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
