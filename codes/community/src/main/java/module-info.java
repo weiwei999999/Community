@@ -4,6 +4,7 @@ module csu.train.community {
 
 
     opens csu.train.community to javafx.fxml;
+    opens csu.train.community.views to javafx.fxml;
     exports csu.train.community;
     exports csu.train.community.views;
 }

@@ -11,7 +11,7 @@ loginView是打开的第一页，登录页
 loginPage类是主页，main函数也放在这里了（懒得改了）
 ---!---
 
-图片等资源放在 resources
+图片等资源放在 picture 包
 
 别忘了写注释//
 
@@ -22,4 +22,8 @@ mingming
 =======
 确保能运行了再上传
 
+<<<<<<< HEAD
 >>>>>>> b305ceb947d45a080328c2429cb8e08ec7005596
+=======
+test 20:50
+>>>>>>> e43b8f4d4ca6e4e8ad4adba16643c71443c6ec34
