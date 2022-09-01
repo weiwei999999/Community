@@ -11,7 +11,7 @@ loginView是打开的第一页，登录页
 loginPage类是主页，main函数也放在这里了（懒得改了）
 ---!---
 
-图片等资源放在 resources
+图片等资源放在 picture 包
 
 别忘了写注释//
 
