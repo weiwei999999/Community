@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <TextField text="欢迎来到社区服务中心" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <TextField text="by  JavaFX实训小组" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <VBox prefHeight="578.0" prefWidth="157.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="124.0" prefWidth="157.0">
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="84.0">
+                     <image>
+                        <Image url="@../picture/Working.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="68.0" prefWidth="157.0">
+               <children>
+                  <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" text="预约办事" textAlignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="132.0" prefWidth="157.0">
+               <children>
+                  <ImageView fitHeight="87.0" fitWidth="95.0">
+                     <image>
+                        <Image url="@../picture/Notice.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="157.0">
+               <children>
+                  <Button mnemonicParsing="false" text="查看通知" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="113.0" prefWidth="130.0">
+               <children>
+                  <ImageView fitHeight="123.0" fitWidth="145.0" opacity="0.74" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/Suggestion.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="157.0">
+               <children>
+                  <Button mnemonicParsing="false" text="反馈建议" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="157.0">
+               <children>
+                  <Button mnemonicParsing="false" text="退出界面" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <StackPane>
+               <children>
+                  <AnchorPane prefHeight="1022.0" prefWidth="1590.0">
+                     <children>
+                        <ImageView fitHeight="596.0" fitWidth="890.0" opacity="0.65">
+                           <image>
+                              <Image url="@../picture/R-C2.png" />
+                           </image>
+                           <effect>
+                              <Glow level="0.81" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

@@ -1,5 +1,6 @@
-csu\train\community\views\LoginPage.class
-module-info.class
+csu\train\community\views\citizenController.class
 csu\train\community\views\LoginController.class
 csu\train\community\HelloApplication.class
 csu\train\community\HelloController.class
+csu\train\community\views\LoginPage.class
+module-info.class
