@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a739079e-2a69-49fb-8ce9-566265591e06" name="Changes" comment="" />
+    <list default="true" id="a739079e-2a69-49fb-8ce9-566265591e06" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/codes/community/src/main/java/csu/train/community/picture/Notice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/community/src/main/java/csu/train/community/picture/R-C2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/community/src/main/java/csu/train/community/picture/Suggestion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/community/src/main/java/csu/train/community/picture/Working.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/community/src/main/java/csu/train/community/views/citizen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/community/src/main/java/csu/train/community/views/citizenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_base_11_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_base_11_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_base_win_11_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_base_win_11_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_controls_11_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_controls_11_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_controls_win_11_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_controls_win_11_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_fxml_11_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_fxml_11_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_11_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_11_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_graphics_11_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_graphics_11_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_11_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_11_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/community.iml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/community.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/src/main/java/csu/train/community/views/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/src/main/java/csu/train/community/views/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/community/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/codes/community/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/03-社区需求分析.docx" beforeDir="false" afterPath="$PROJECT_DIR$/files/03-社区需求分析.docx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/codes/community" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -35,5 +64,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
