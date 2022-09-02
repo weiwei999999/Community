@@ -4,5 +4,6 @@ csu\train\community\HelloController.class
 module-info.class
 csu\train\community\util\ConnectionUtil.class
 csu\train\community\views\LoginController.class
+csu\train\community\emailsend\emailsend.class
 csu\train\community\views\LoginPage.class
 csu\train\community\vo\Role.class

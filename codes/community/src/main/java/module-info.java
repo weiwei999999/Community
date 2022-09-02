@@ -3,6 +3,7 @@ module csu.train.community {
     requires javafx.fxml;
     requires javafx.graphics;
     requires java.sql;
+    requires java.mail;
 
 
     opens csu.train.community to javafx.fxml;
@@ -12,4 +13,5 @@ module csu.train.community {
     exports csu.train.community.util;
     exports csu.train.community.dao;
     exports csu.train.community.vo;
+    exports csu.train.community.model;
 }
