@@ -14,7 +14,7 @@ public class LoginPage extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("loginView.fxml"));
+        AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("worker.fxml"));
 
         Scene scene = new Scene(anchorPane);
 

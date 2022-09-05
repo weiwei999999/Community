@@ -1,12 +1,30 @@
 package csu.train.community.views;
 
+import javafx.animation.TranslateTransition;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
+import javafx.util.Duration;
 
-public class WorkerController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class WorkerController implements Initializable{
+
+    @FXML
+    private ImageView drop;
+    private ImageView qiehuan;
 
     @FXML
     private Button residentManagement;
+
+    @FXML
+    private AnchorPane parent;
 
     @FXML
     private Button information;
@@ -20,4 +38,104 @@ public class WorkerController {
     @FXML
     private Button out;
 
+
+
+   @Override
+   public void initialize(URL url, ResourceBundle resourceBundle) {
+       //drop.setImage(image);
+    }
+
+    @FXML
+    public void inform(ActionEvent event) throws Exception{
+
+       // drop.setImage("../picture/drip-full.png");//new Image(this.getClass().getResourceAsStream(
+        TranslateTransition translate = new TranslateTransition();
+
+        translate.setNode(drop); //drop.setImage(image1);
+        translate.setDuration(Duration.millis(500));
+       // translate.setCycleCount(TranslateTransition.INDEFINITE);
+        translate.setToX(0.00);
+        translate.setToY(0.00);
+       // translate.setAutoReverse(true);
+
+        translate.play();//drop.setImage(image2);
+        Parent informjiemian=FXMLLoader.load(this.getClass().getResource("workerinform.fxml"));
+        parent.getChildren().clear();
+        parent.getChildren().add(informjiemian);
+
+    }
+    @FXML
+    void apply(ActionEvent event) throws Exception{
+        //drop.setImage(image1);
+        TranslateTransition translate = new TranslateTransition();
+        translate.setNode(this.drop);
+        translate.setDuration(Duration.millis(500));
+        //translate.setCycleCount(TranslateTransition.INDEFINITE);
+        translate.setToX(0);
+        translate.setToY(110.0);
+      //  translate.setAutoReverse(true);
+       // drop.setImage(image2);
+        translate.play();
+      //  ;
+
+       Parent checkjiemian =FXMLLoader.load(this.getClass().getResource("workercheck.fxml"));
+       parent.getChildren().clear();
+      parent.getChildren().add(checkjiemian);
+
+
+
+    }
+
+    @FXML
+    void illness(ActionEvent event) throws  Exception{
+       // drop.setImage(image1);
+        TranslateTransition translate = new TranslateTransition();
+        translate.setNode(this.drop);
+        translate.setDuration(Duration.millis(500));
+       // translate.setCycleCount(TranslateTransition.INDEFINITE);
+        translate.setToX(0);
+        translate.setToY(220);
+       // translate.setAutoReverse(true);
+        translate.play();
+       // drop.setImage(image2);
+        Parent preventjiemian=FXMLLoader.load(this.getClass().getResource("workerprevent.fxml"));
+        parent.getChildren().clear();
+        parent.getChildren().add(preventjiemian);
+    }
+
+    @FXML
+    void resident(ActionEvent event) throws Exception{
+      // drop.setImage(image1);
+        TranslateTransition translate = new TranslateTransition();
+        translate.setNode(this.drop);
+        translate.setDuration(Duration.millis(500));
+        //translate.setCycleCount(TranslateTransition.INDEFINITE);
+        translate.setToX(0);
+        translate.setToY(335);
+        //translate.setAutoReverse(true);
+        translate.play();
+        //drop.setImage(image2);
+        Parent managejiemian=FXMLLoader.load(this.getClass().getResource("workermanage.fxml"));
+        parent.getChildren().clear();
+        parent.getChildren().add(managejiemian);
+
+    }
+
+    @FXML
+    void out(ActionEvent event) {
+        System.exit(0);
+    }
+    void huanye()
+    {
+        TranslateTransition translate = new TranslateTransition();
+        translate.setNode(this.drop);
+        translate.setDuration(Duration.millis(500));
+        //translate.setCycleCount(TranslateTransition.INDEFINITE);
+        translate.setToX(0);
+        translate.setToY(335);
+        //translate.setAutoReverse(true);
+        translate.play();
+    }
 }
+
+
