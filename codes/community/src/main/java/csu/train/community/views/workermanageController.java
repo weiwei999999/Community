@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.layout.AnchorPane;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -13,45 +14,48 @@ import java.util.ResourceBundle;
 public class workermanageController implements Initializable {
 
 
+
+    @FXML
+    private AnchorPane workermanage;
+
     @FXML
     private TableView<househeader> residenttable;
 
     @FXML
-    private TableColumn<househeader, String> dishIdColumn;
-    @FXML
-    private TableColumn<househeader, String> dishNameColumn;
-    @FXML
-    private TableColumn<househeader, String> imagePathColumn;
-    @FXML
-    private TableColumn<househeader, Number> priceColumn;
+    private TableColumn<househeader, String> address;
 
-    String[] food = {"A", "B", "C"};
+    @FXML
+    private TableColumn<househeader, String> phone;
+
+    @FXML
+    private TableColumn<househeader, String> sex;
+
+    @FXML
+    private TableColumn<househeader, String> name;
+
+    @FXML
+    private TableColumn<househeader, String> job;
+
+    @FXML
+    private TableColumn<househeader, Integer> age;
+   // String[] food = {"A", "B", "C"};
 
     private ObservableList<househeader> househeaderData = FXCollections.observableArrayList();
 
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle)
-    {
-        househeaderData.add(new househeader("D001", "AAA", "imgs/1.png", 52.5));
-        househeaderData.add(new househeader("D002", "BBB", "imgs/2.png", 92.5));
-        househeaderData.add(new househeader("D003", "CCC", "imgs/3.png", 95.7));
-        househeaderData.add(new househeader("D004", "DDD", "imgs/4.png", 41.6));
-        househeaderData.add(new househeader("D001", "AAA", "imgs/1.png", 52.5));
-        househeaderData.add(new househeader("D002", "BBB", "imgs/2.png", 92.5));
-        househeaderData.add(new househeader("D003", "CCC", "imgs/3.png", 95.7));
-        househeaderData.add(new househeader("D004", "DDD", "imgs/4.png", 41.6));
-        househeaderData.add(new househeader("D001", "AAA", "imgs/1.png", 52.5));
-        househeaderData.add(new househeader("D002", "BBB", "imgs/2.png", 92.5));
-        househeaderData.add(new househeader("D003", "CCC", "imgs/3.png", 95.7));
-        househeaderData.add(new househeader("D004", "DDD", "imgs/4.png", 41.6));
+    public void initialize(URL url, ResourceBundle resourceBundle){
+        househeaderData.add(new househeader("mingming","male","address",20,"4849595","yyyy"));
+        name.setCellValueFactory(celldate->celldate.getValue().nameProperty());
+        sex.setCellValueFactory(celldate->celldate.getValue().sexProperty());
+        address.setCellValueFactory(celldate->celldate.getValue().addressProperty());
+       // age.setCellValueFactory(celldate->celldate.getValue().ageProperty());
+        phone.setCellValueFactory(celldate->celldate.getValue().phoneProperty());
+
+        residenttable.setItems(househeaderData);
 
 
-
-      residenttable.setItems(househeaderData);
-
-
-
+        workermanage.getStylesheets().add(getClass().getResource("css/yangshi.css").toExternalForm());//导入css样式表
 
 
 

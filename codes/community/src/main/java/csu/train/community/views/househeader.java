@@ -1,73 +1,101 @@
 package csu.train.community.views;
 
-import javafx.beans.property.DoubleProperty;
-import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.*;
 
 public class househeader {
 
-    private final StringProperty dishId;
-    private final StringProperty dishName;
-    private final StringProperty imagePath;
-    private final DoubleProperty price;
+    private final StringProperty name;
+    private final StringProperty sex;
+    private final StringProperty address;
+    private final IntegerProperty age;
+    private final StringProperty phone;
+    private final StringProperty job;
+
+    public String getName() {
+        return name.get();
+    }
+
+    public StringProperty nameProperty() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name.set(name);
+    }
+
+    public String getSex() {
+        return sex.get();
+    }
+
+    public StringProperty sexProperty() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex.set(sex);
+    }
+
+    public String getAddress() {
+        return address.get();
+    }
+
+    public StringProperty addressProperty() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address.set(address);
+    }
+
+    public int getAge() {
+        return age.get();
+    }
+
+    public IntegerProperty ageProperty() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age.set(age);
+    }
+
+    public String getPhone() {
+        return phone.get();
+    }
+
+    public StringProperty phoneProperty() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone.set(phone);
+    }
+
+    public String getJob() {
+        return job.get();
+    }
+
+    public StringProperty jobProperty() {
+        return job;
+    }
+
+    public void setJob(String job) {
+        this.job.set(job);
+    }
+
+
 
     public househeader() {
-        this(null,null,null,null);
+        this(null, null, null, null, null, null);
     }
 
-    public househeader(String id, String name, String imagePath, Double price) {
-        this.dishId = new SimpleStringProperty(id);
-        this.dishName = new SimpleStringProperty(name);
-        this.imagePath = new SimpleStringProperty(imagePath);
-        this.price = new SimpleDoubleProperty(price);
-    }
-
-    public String getDishId() {
-        return dishId.get();
-    }
-
-    public StringProperty dishIdProperty() {
-        return dishId;
-    }
-
-    public void setDishId(String dishId) {
-        this.dishId.set(dishId);
-    }
-
-    public String getDishName() {
-        return dishName.get();
-    }
-
-    public StringProperty dishNameProperty() {
-        return dishName;
-    }
-
-    public void setDishName(String dishName) {
-        this.dishName.set(dishName);
-    }
-
-    public String getImagePath() {
-        return imagePath.get();
-    }
-
-    public StringProperty imagePathProperty() {
-        return imagePath;
-    }
-
-    public void setImagePath(String imagePath) {
-        this.imagePath.set(imagePath);
-    }
-
-    public double getPrice() {
-        return price.get();
-    }
-
-    public DoubleProperty priceProperty() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price.set(price);
+    public househeader(String name, String sex, String address, Integer age, String phone, String job) {
+        this.name = new SimpleStringProperty(name);
+        this.sex = new SimpleStringProperty(sex);
+        this.age = new SimpleIntegerProperty(age);
+        this.phone = new SimpleStringProperty(phone);
+        this.job = new SimpleStringProperty(job);
+        this.address = new SimpleStringProperty(address);
     }
 }
+

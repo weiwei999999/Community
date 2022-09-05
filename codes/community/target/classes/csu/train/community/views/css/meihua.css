@@ -1,0 +1,19 @@
+.button
+{
+    -fx-background-color: rgb(195,195,195);
+    -fx-font-family: "黑体";
+}
+.text-field
+{
+    -fx-font-family: "华文楷体";
+    -fx-border-radius: 100;
+-fx-background-color: rgb(255,255,255)                                                                                                                      ;
+}
+.anchorpane
+{
+    -fx-background-color: rgb(240,240,240);
+}
+#cebian
+{
+    -fx-background-color: rgb(131,175,155);
+}

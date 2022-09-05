@@ -6,12 +6,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="628" prefWidth="849" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.workermanageController">
+<AnchorPane fx:id="workermanage" prefHeight="628" prefWidth="849" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.workermanageController">
    <children>
-      <TableView fx:id="residenttable" prefHeight="125.0" prefWidth="849.0">
+      <TableView fx:id="residenttable" layoutX="63.0" layoutY="31.0" prefHeight="466.0" prefWidth="723.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="name" prefWidth="107.0" text="姓名" />
+            <TableColumn fx:id="sex" prefWidth="137.0" text="性别" />
+          <TableColumn fx:id="age" prefWidth="118.0" text="年龄" />
+            <TableColumn fx:id="address" prefWidth="123.0" text="地址" />
+            <TableColumn fx:id="phone" prefWidth="75.0" text="手机号" />
+            <TableColumn fx:id="job" prefWidth="75.0" text="职业" />
         </columns>
       </TableView>
    </children>

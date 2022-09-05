@@ -8,7 +8,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.WorkerController">
+<AnchorPane fx:id="workermain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.WorkerController">
    <children>
       <BorderPane prefHeight="650.0" prefWidth="1000.0">
          <top>
@@ -18,13 +18,8 @@
                </rotationAxis></Text>
          </top>
          <left>
-            <StackPane prefHeight="627.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+            <StackPane fx:id="cebian" prefHeight="627.0" prefWidth="130.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="628.0" fitWidth="151.0">
-                     <image>
-                        <Image url="@../picture/juxing.png" />
-                     </image>
-                  </ImageView>
                   <VBox alignment="CENTER_RIGHT" centerShape="false" prefHeight="585.0" prefWidth="151.0">
                      <children>
                         <HBox alignment="CENTER" prefHeight="107.0" prefWidth="150.0">
@@ -128,5 +123,6 @@
 
 
       </BorderPane>
+      <ImageView fx:id="qiehuan2" fitHeight="628.0" fitWidth="849.0" layoutX="151.0" layoutY="-628.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
