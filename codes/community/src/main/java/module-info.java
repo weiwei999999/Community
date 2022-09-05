@@ -3,7 +3,7 @@ module csu.train.community {
     requires javafx.fxml;
     requires javafx.graphics;
     requires java.sql;
-    requires java.mail;
+   // requires java.mail;
 
 
     opens csu.train.community to javafx.fxml;
