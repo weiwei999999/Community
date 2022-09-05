@@ -1,5 +1,6 @@
 package csu.train.community.views;
 
+import javafx.animation.Timeline;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -7,21 +8,31 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.util.Duration;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class WorkerController implements Initializable{
+    @FXML
+    private StackPane cebian;
 
     @FXML
     private ImageView drop;
-    private ImageView qiehuan;
+    @FXML
+    private ImageView qiehuan2;
+    Image ppt =new Image(this.getClass().getResourceAsStream("qiehuan.png"));
 
     @FXML
     private Button residentManagement;
+
+    @FXML
+    private AnchorPane workermain;
+
 
     @FXML
     private AnchorPane parent;
@@ -42,13 +53,16 @@ public class WorkerController implements Initializable{
 
    @Override
    public void initialize(URL url, ResourceBundle resourceBundle) {
-       //drop.setImage(image);
+       qiehuan2.setImage(ppt);
+       System.out.println(qiehuan2.getX()+qiehuan2.getY());
+       cebian.getStylesheets().add(getClass().getResource("css/meihua.css").toExternalForm());
+
     }
 
     @FXML
     public void inform(ActionEvent event) throws Exception{
 
-       // drop.setImage("../picture/drip-full.png");//new Image(this.getClass().getResourceAsStream(
+       // drop.setImage(new Image(this.getClass().getResourceAsStream("../picture/drip-full.png");
         TranslateTransition translate = new TranslateTransition();
 
         translate.setNode(drop); //drop.setImage(image1);
@@ -62,6 +76,7 @@ public class WorkerController implements Initializable{
         Parent informjiemian=FXMLLoader.load(this.getClass().getResource("workerinform.fxml"));
         parent.getChildren().clear();
         parent.getChildren().add(informjiemian);
+        huanye();
 
     }
     @FXML
@@ -81,6 +96,7 @@ public class WorkerController implements Initializable{
        Parent checkjiemian =FXMLLoader.load(this.getClass().getResource("workercheck.fxml"));
        parent.getChildren().clear();
       parent.getChildren().add(checkjiemian);
+        huanye();
 
 
 
@@ -98,14 +114,19 @@ public class WorkerController implements Initializable{
        // translate.setAutoReverse(true);
         translate.play();
        // drop.setImage(image2);
+         huanye();
+
         Parent preventjiemian=FXMLLoader.load(this.getClass().getResource("workerprevent.fxml"));
         parent.getChildren().clear();
+
         parent.getChildren().add(preventjiemian);
+
     }
 
     @FXML
     void resident(ActionEvent event) throws Exception{
       // drop.setImage(image1);
+
         TranslateTransition translate = new TranslateTransition();
         translate.setNode(this.drop);
         translate.setDuration(Duration.millis(500));
@@ -118,6 +139,8 @@ public class WorkerController implements Initializable{
         Parent managejiemian=FXMLLoader.load(this.getClass().getResource("workermanage.fxml"));
         parent.getChildren().clear();
         parent.getChildren().add(managejiemian);
+        huanye();
+
 
     }
 
@@ -125,16 +148,21 @@ public class WorkerController implements Initializable{
     void out(ActionEvent event) {
         System.exit(0);
     }
-    void huanye()
+    void huanye() throws Exception
     {
+
         TranslateTransition translate = new TranslateTransition();
-        translate.setNode(this.drop);
-        translate.setDuration(Duration.millis(500));
-        //translate.setCycleCount(TranslateTransition.INDEFINITE);
-        translate.setToX(0);
-        translate.setToY(335);
-        //translate.setAutoReverse(true);
+        translate.setNode(this.qiehuan2);
+        translate.setDuration(Duration.millis(150));
+
+        translate.setCycleCount(2);
+            System.out.println(qiehuan2.getX());
+        translate.setByX(0);
+        translate.setByY(628);
+        translate.setAutoReverse(true);
         translate.play();
+
+
     }
 }
 

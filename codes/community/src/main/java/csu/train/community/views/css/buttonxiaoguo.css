@@ -1,0 +1,42 @@
+#no{
+    -fx-background-color: rgba(0,0,0,0);
+}
+#wait{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+#finish{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+
+#no:hover
+{
+    -fx-border-color: rgb(195,195,195);
+    -fx-border-width: 8px;
+
+}
+#wait:hover
+{
+    -fx-border-color: rgb(195,195,195);;
+    -fx-border-width: 8px;
+
+}
+#finish:hover
+{
+    -fx-border-color: rgb(195,195,195);;
+    -fx-border-width: 8px;
+
+}
+#no:pressed {
+    -fx-border-color: rgb(200, 200, 256);
+    -fx-border-width: 10px;
+}
+#wait:pressed {
+    -fx-border-color: rgb(200, 200, 256);
+    -fx-border-width: 10px;
+}
+#finish:pressed {
+    -fx-border-color: rgb(200, 200, 256);
+    -fx-border-width: 10px;
+}

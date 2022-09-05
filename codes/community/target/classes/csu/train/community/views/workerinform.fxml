@@ -6,11 +6,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="628" prefWidth="849" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.workerinformController">
+<AnchorPane fx:id="workerinformpage" prefHeight="628" prefWidth="849" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.workerinformController">
    <children>
       <Button fx:id="workerinform" layoutX="679.0" layoutY="541.0" mnemonicParsing="false" text="发布新通知" />
       <TextArea fx:id="content" layoutX="110.0" layoutY="168.0" prefHeight="259.0" prefWidth="433.0" />
-      <AnchorPane layoutX="335.0" layoutY="68.0" prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane layoutX="335.0" layoutY="68.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="71.0" layoutY="33.0" text="至" />
+         </children></AnchorPane>
       <TextField fx:id="title" layoutX="110.0" layoutY="32.0" />
       <Label layoutX="39.0" layoutY="38.0" text="标题" />
       <Label layoutX="39.0" layoutY="101.0" text="时间" />
@@ -19,5 +22,7 @@
       <Button fx:id="fujian" layoutX="342.0" layoutY="541.0" mnemonicParsing="false" text="上传附件" />
       <Label layoutX="456.0" layoutY="38.0" text="发布单位" />
       <TextField fx:id="danwei" layoutX="551.0" layoutY="32.0" />
+      <DatePicker fx:id="begin" layoutX="120.0" layoutY="95.0" />
+      <DatePicker fx:id="end" layoutX="435.0" layoutY="95.0" />
    </children>
 </AnchorPane>

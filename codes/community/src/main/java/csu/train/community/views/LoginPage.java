@@ -14,17 +14,17 @@ public class LoginPage extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-
-<<<<<<< HEAD
-        AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("worker.fxml"));
-=======
-        AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("login.fxml"));
->>>>>>> 5b5dbd480e0e225b5163154bc341242865dd4129
+       // <<<<<<< HEAD
+       AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("worker.fxml"));
+//=======
+        //AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("login.fxml"));
+//>>>>>>> 5b5dbd480e0e225b5163154bc341242865dd4129
 
         Scene scene = new Scene(anchorPane);
+       // scene.getStylesheets().add(getClass().getResource("css/workermain.css").toExternalForm());//导入css样式表
 
         stage.setScene(scene);
-        theStage=stage;
+
         stage.show();
 
     }

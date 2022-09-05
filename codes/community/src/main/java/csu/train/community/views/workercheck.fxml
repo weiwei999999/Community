@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="628" prefWidth="849" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.workercheckController">
+<AnchorPane fx:id="workercheckbutton" prefHeight="628" prefWidth="849" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.workercheckController">
    <children>
       <StackPane prefHeight="150.0" prefWidth="200.0">
          <children>
@@ -18,6 +18,12 @@
                   <Image url="@../picture/back.png" />
                </image>
             </ImageView>
+            <AnchorPane fx:id="checklist" prefHeight="200.0" prefWidth="200.0">
+               <children><fx:include source="wait.fxml" /></children>
+               <StackPane.margin>
+                  <Insets top="89.0" />
+               </StackPane.margin>
+            </AnchorPane>
          </children>
       </StackPane>
       <HBox prefHeight="78.0" prefWidth="870.0">
@@ -42,7 +48,7 @@
                               <Insets right="40.0" />
                            </StackPane.margin>
                         </ImageView>
-                        <Button fx:id="wait" mnemonicParsing="false" opacity="0.0" prefHeight="97.0" prefWidth="346.0" text="Button" />
+                        <Button fx:id="wait" mnemonicParsing="false" onAction="#waitlist" prefHeight="97.0" prefWidth="346.0" />
                      </children>
                   </StackPane>
                </children>
@@ -64,7 +70,7 @@
                               <Font size="27.0" />
                            </font>
                         </Label>
-                        <Button fx:id="finish" mnemonicParsing="false" opacity="0.0" prefHeight="153.0" prefWidth="438.0" text="Button" />
+                        <Button fx:id="finish" mnemonicParsing="false" onAction="#finishlist" prefHeight="153.0" prefWidth="438.0" />
                      </children>
                   </StackPane>
                </children>
@@ -89,7 +95,7 @@
                               <Insets right="40.0" />
                            </StackPane.margin>
                         </ImageView>
-                        <Button fx:id="no" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="329.0" text="Button" />
+                        <Button fx:id="no" mnemonicParsing="false" onAction="#nolist" prefHeight="100.0" prefWidth="329.0" />
                      </children>
                   </StackPane>
                </children>

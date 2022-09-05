@@ -6,9 +6,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="csu.train.community.views.Finish"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="536.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.workercheckController3">
+   <children>
+      <TableView layoutX="86.0" layoutY="59.0" prefHeight="336.0" prefWidth="618.0">
+        <columns>
+          <TableColumn prefWidth="99.0" text="申请人" />
+          <TableColumn prefWidth="127.0" text="申请项目" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>
