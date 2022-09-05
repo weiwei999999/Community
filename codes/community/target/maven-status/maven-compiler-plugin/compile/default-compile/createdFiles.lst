@@ -2,6 +2,14 @@ csu\train\community\views\citizenController.class
 csu\train\community\HelloApplication.class
 csu\train\community\HelloController.class
 module-info.class
+<<<<<<< HEAD
 csu\train\community\views\LoginController.class
 csu\train\community\views\LoginPage.class
 csu\train\community\views\workerinformController.class
+=======
+csu\train\community\util\ConnectionUtil.class
+csu\train\community\views\LoginController.class
+csu\train\community\emailsend\emailsend.class
+csu\train\community\views\LoginPage.class
+csu\train\community\vo\Role.class
+>>>>>>> 5b5dbd480e0e225b5163154bc341242865dd4129
