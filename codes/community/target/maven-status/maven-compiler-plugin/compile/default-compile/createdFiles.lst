@@ -1,12 +1,12 @@
-<<<<<<< HEAD
-=======
 csu\train\community\views\citizenController.class
 csu\train\community\HelloController.class
+csu\train\community\views\progress.class
 csu\train\community\vo\Role.class
+csu\train\community\views\tongzhi.class
 csu\train\community\views\workerinformController.class
 csu\train\community\HelloApplication.class
 module-info.class
 csu\train\community\util\ConnectionUtil.class
 csu\train\community\views\LoginController.class
 csu\train\community\views\LoginPage.class
->>>>>>> c2ee14dc03b38552c107f1e173a943ab95aef4c4
+csu\train\community\views\banshi.class
