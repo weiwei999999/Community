@@ -4,6 +4,7 @@ package csu.train.community.views;
 
 
 
+import csu.train.community.dao.RoleDao;
 import csu.train.community.model.EmailSend;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -20,6 +21,7 @@ import javafx.stage.Stage;
 
 import javax.mail.MessagingException;
 import java.io.IOException;
+import java.sql.SQLException;
 
 
 public class LoginController {
@@ -51,22 +53,18 @@ public class LoginController {
         flag = mail.matches(correct);
         int ma = number();
         String yanzhengma = String.valueOf(ma);
+
         try {
             new EmailSend().sentSimpleMail("验证码", yanzhengma, email.getText());
         } catch (MessagingException e) {
             e.printStackTrace();
         }
-        if(flag)
+
+        RoleDao roleDao = new RoleDao();
+        if(flag && roleDao.getRoleByMail(mail))//复合格式并且邮箱在数据库里
         {
             submitBtn.setVisible(false);
-            for(int time=10; time>0; time--)
-            {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+            //这里曾经有个计时器
             submitBtn.setVisible(true);
         }
 
