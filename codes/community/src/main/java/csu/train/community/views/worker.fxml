@@ -10,7 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.WorkerController">
    <children>
-      <BorderPane layoutY="-3.0" prefHeight="650.0" prefWidth="1000.0">
+      <BorderPane prefHeight="650.0" prefWidth="1000.0">
          <top>
             <Text layoutX="1000.0" strokeType="OUTSIDE" strokeWidth="0.0" text="欢迎使用社区服务平台" wrappingWidth="998.3603515625" BorderPane.alignment="CENTER">
                <rotationAxis>
@@ -31,13 +31,18 @@
                            <children>
                               <StackPane prefHeight="105.0" prefWidth="150.0">
                                  <children>
+                                    <Label contentDisplay="BOTTOM" text="发布通知" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
+                                    <ImageView fx:id="drop" fitHeight="107.0" fitWidth="107.0">
+                                       <image>
+                                          <Image url="@../picture/luyin.png" />
+                                       </image>
+                                    </ImageView>
                                     <ImageView fitHeight="69.0" fitWidth="75.0">
                                        <image>
                                           <Image url="@../picture/tongzhi.png" />
                                        </image>
                                     </ImageView>
-                                    <Button fx:id="information" contentDisplay="BOTTOM" mnemonicParsing="false" opacity="0.0" prefHeight="75.0" prefWidth="101.0" text="发布通知" />
-                                    <Label contentDisplay="BOTTOM" text="发布通知" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
+                                    <Button fx:id="information" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#inform" opacity="0.0" prefHeight="75.0" prefWidth="101.0" text="发布通知" />
                                  </children>
                               </StackPane>
                            </children>
@@ -46,12 +51,12 @@
                            <children>
                               <StackPane prefHeight="150.0" prefWidth="200.0">
                                  <children>
-                                    <ImageView fitHeight="79.0" fitWidth="91.0">
+                                    <ImageView fitHeight="72.0" fitWidth="81.0">
                                        <image>
                                           <Image url="@../picture/shenqing.png" />
                                        </image>
                                     </ImageView>
-                                    <Button fx:id="check" mnemonicParsing="false" opacity="0.0" prefHeight="71.0" prefWidth="110.0" text="审查申请" />
+                                    <Button fx:id="check" mnemonicParsing="false" onAction="#apply" opacity="0.0" prefHeight="71.0" prefWidth="110.0" text="审查申请" />
                                     <Label text="办事申请" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
                                  </children>
                               </StackPane>
@@ -61,12 +66,12 @@
                            <children>
                               <StackPane prefHeight="150.0" prefWidth="200.0">
                                  <children>
-                                    <ImageView fitHeight="69.0" fitWidth="69.0">
+                                    <ImageView fitHeight="61.0" fitWidth="66.0">
                                        <image>
                                           <Image url="@../picture/yiqingguanli.png" />
                                        </image>
                                     </ImageView>
-                                    <Button fx:id="illness" mnemonicParsing="false" opacity="0.0" prefHeight="73.0" prefWidth="108.0" text="防疫调度" />
+                                    <Button fx:id="illness" mnemonicParsing="false" onAction="#illness" opacity="0.0" prefHeight="73.0" prefWidth="108.0" text="防疫调度" />
                                     <Label text="防疫调度" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
                                  </children>
                               </StackPane>
@@ -76,13 +81,13 @@
                            <children>
                               <StackPane prefHeight="119.0" prefWidth="133.0">
                                  <children>
-                                    <ImageView fitHeight="58.0" fitWidth="58.0">
+                                    <Label text="居民管理" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
+                                    <ImageView fitHeight="56.0" fitWidth="58.0">
                                        <image>
                                           <Image url="@../picture/chengjizhenjumin.png" />
                                        </image>
                                     </ImageView>
-                                    <Button fx:id="residentManagement" mnemonicParsing="false" opacity="0.0" prefHeight="74.0" prefWidth="112.0" text="居民管理" />
-                                    <Label text="居民管理" textFill="#e8e8e8" StackPane.alignment="BOTTOM_CENTER" />
+                                    <Button fx:id="residentManagement" mnemonicParsing="false" onAction="#resident" opacity="0.0" prefHeight="74.0" prefWidth="112.0" text="居民管理" />
                                  </children>
                               </StackPane>
                            </children>
@@ -92,12 +97,12 @@
                            <children>
                               <StackPane prefHeight="150.0" prefWidth="200.0">
                                  <children>
-                                    <ImageView fitHeight="63.0" fitWidth="71.0">
+                                    <ImageView fitHeight="57.0" fitWidth="68.0">
                                        <image>
                                           <Image url="@../picture/tuichu.png" />
                                        </image>
                                     </ImageView>
-                                    <Button fx:id="out" mnemonicParsing="false" opacity="0.0" prefHeight="83.0" prefWidth="111.0" text="退出" />
+                                    <Button fx:id="out" mnemonicParsing="false" onAction="#out" opacity="0.0" prefHeight="83.0" prefWidth="111.0" text="退出" />
                                     <Label text="退出" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
                                  </children>
                               </StackPane>
@@ -111,6 +116,17 @@
                </children>
             </StackPane>
          </left>
+         <center>
+            <AnchorPane fx:id="parent" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane layoutX="313.0" layoutY="205.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children><fx:include source="workerinform.fxml" /></children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+         </center>
+
+
       </BorderPane>
    </children>
 </AnchorPane>

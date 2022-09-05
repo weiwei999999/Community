@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="628" prefWidth="849" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.workercheckController">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="625.0" fitWidth="866.0">
+               <image>
+                  <Image url="@../picture/back.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <HBox prefHeight="78.0" prefWidth="870.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="78.0" prefWidth="309.0">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="57.0" prefWidth="164.0" text="        待审批" StackPane.alignment="CENTER_LEFT">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets left="20.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <ImageView fitHeight="89.0" fitWidth="87.0" StackPane.alignment="CENTER_RIGHT">
+                           <image>
+                              <Image url="@../picture/wodedaiban.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="40.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Button fx:id="wait" mnemonicParsing="false" opacity="0.0" prefHeight="97.0" prefWidth="346.0" text="Button" />
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="89.0" prefWidth="284.0">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="86.0" fitWidth="88.0" StackPane.alignment="CENTER_RIGHT">
+                           <image>
+                              <Image url="@../picture/yiwancheng2.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="40.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Label prefHeight="28.0" prefWidth="176.0" text="    审批通过" StackPane.alignment="CENTER_LEFT">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="finish" mnemonicParsing="false" opacity="0.0" prefHeight="153.0" prefWidth="438.0" text="Button" />
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="89.0" prefWidth="267.0">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="46.0" prefWidth="147.0" text="    审批驳回" StackPane.alignment="CENTER_LEFT">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets left="10.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <ImageView fitHeight="72.0" fitWidth="73.0" StackPane.alignment="CENTER_RIGHT">
+                           <image>
+                              <Image url="@../picture/weiwancheng.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="40.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Button fx:id="no" mnemonicParsing="false" opacity="0.0" prefHeight="100.0" prefWidth="329.0" text="Button" />
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
