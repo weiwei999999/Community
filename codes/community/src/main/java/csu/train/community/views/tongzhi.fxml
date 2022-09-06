@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.tongzhi">
    <children>
-      <Button fx:id="knowen" layoutX="236.0" layoutY="317.0" mnemonicParsing="false" text="我知道了" />
-      <Label fx:id="tongzhi" alignment="TOP_LEFT" layoutX="134.0" layoutY="94.0" prefHeight="153.0" prefWidth="332.0" text="通知内容：" />
+      <Button fx:id="known" layoutX="614.0" layoutY="445.0" mnemonicParsing="false" onAction="#knownClick" text="我知道了" />
+      <Label fx:id="inform" alignment="TOP_LEFT" layoutX="128.0" layoutY="78.0" prefHeight="321.0" prefWidth="534.0" text="通知内容：">
+         <font>
+            <Font size="50.0" />
+         </font></Label>
+      <Button fx:id="getInform" layoutX="80.0" layoutY="445.0" mnemonicParsing="false" onAction="#getInfo" text="获取通知" />
    </children>
 </AnchorPane>

@@ -1,5 +1,7 @@
 package csu.train.community.views;
 
+import csu.train.community.dao.RoleDao;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -39,11 +41,25 @@ public class workerinformController implements Initializable {
 
     @FXML
     private DatePicker begin;
+
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
         workerinformpage.getStylesheets().add(getClass().getResource("css/meihua.css").toExternalForm());//导入css样式表
     }
 
+    @FXML
+    void admit_inform(ActionEvent event) {
 
+        String text = content.getText();
+
+        RoleDao roleDao = new RoleDao();
+
+        roleDao.updateNotice(1,text);
+
+        for(int citizenId = 1 ; citizenId <= 5 ; citizenId++ ) {
+            //发布新通知后，重置所有人的接收状态
+            roleDao.updateIfReceiveNoticeById(citizenId,0);
+        }
+    }
 
 }

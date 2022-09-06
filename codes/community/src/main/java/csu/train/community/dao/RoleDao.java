@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.StreamSupport;
 
 public class RoleDao {
 
@@ -133,11 +134,11 @@ public class RoleDao {
         return false;
     }
 
-    //更新/更改 数据库中的数据
-    public int updateRole(int id, String name) {
+    //更新/更改 数据公告的数据
+    public int updateNotice(int id, String name) {
         int m = -1;
         //删除行的SQL
-        String sql = "UPDATE role_info SET role_name = ? WHERE id = ?";
+        String sql = "UPDATE notice_data SET notice_content = ? WHERE notice_id = ?";
         // 获取连接
         Connection cn = ConnectionUtil.getConnection();
         //声明语句对象
@@ -149,6 +150,112 @@ public class RoleDao {
             //绑定SQL语句中?对应的参数
             pstmt.setString(1, name);
             pstmt.setInt(2, id);
+
+            //执行SQL
+            m = pstmt.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if(cn!=null) {
+                try {
+                    cn.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return m;
+    }
+
+    //读取公告的数据
+    public String readNotice() {
+
+        String inform = "公告";
+        //删除行的SQL
+        String sql = "SELECT notice_content FROM notice_data WHERE notice_id = 1";
+        // 获取连接
+        Connection cn = ConnectionUtil.getConnection();
+        //声明语句对象
+        PreparedStatement pstmt = null;
+        //声明结果集游标， 用于获取查询结果中的每一行数据
+        ResultSet rs = null;
+
+        try {
+            //预编译SQL
+            pstmt = cn.prepareStatement(sql);
+
+            //执行SQL
+            rs = pstmt.executeQuery();
+
+            rs.next();//在getString前面得写这句
+            inform = rs.getString("notice_content");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if(cn!=null) {
+                try {
+                    cn.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        //System.out.println(inform);
+        return inform;
+    }
+
+    //更改是否接收公告(通过id)
+    public int updateIfReceiveNoticeById(int id, int notice) {
+        int m = -1;
+        //删除行的SQL
+        String sql = "UPDATE citizen_data SET receive_notice = ? WHERE user_id = ?";
+        // 获取连接
+        Connection cn = ConnectionUtil.getConnection();
+        //声明语句对象
+        PreparedStatement pstmt = null;
+
+        try {
+            //预编译SQL
+            pstmt = cn.prepareStatement(sql);
+            //绑定SQL语句中?对应的参数
+            pstmt.setInt(1, notice);
+            pstmt.setInt(2, id);
+
+            //执行SQL
+            m = pstmt.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if(cn!=null) {
+                try {
+                    cn.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return m;
+    }
+
+    //更改是否接收公告(通过mailBox)，（邮箱地址，0或1）
+    public int updateIfReceiveNoticeByMail(String mailBox, int notice) {
+        int m = -1;
+        //删除行的SQL
+        String sql = "UPDATE citizen_data SET receive_notice = ? WHERE user_mailBox = ?";
+        // 获取连接
+        Connection cn = ConnectionUtil.getConnection();
+        //声明语句对象
+        PreparedStatement pstmt = null;
+
+        try {
+            //预编译SQL
+            pstmt = cn.prepareStatement(sql);
+            //绑定SQL语句中?对应的参数
+            pstmt.setInt(1, notice);
+            pstmt.setString(2, mailBox);
 
             //执行SQL
             m = pstmt.executeUpdate();
@@ -218,7 +325,7 @@ public class RoleDao {
 
     public static void main(String[] args) {
         RoleDao roleDao = new RoleDao();
-        roleDao.getRoleByMail("weiwei999weiwei@outlook.com");
+        roleDao.readNotice();
     }
 }
 

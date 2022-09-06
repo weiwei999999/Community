@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Text;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -31,6 +32,13 @@ public class citizenController implements Initializable {
 
     @FXML
     private Button tongzhi;
+
+    @FXML
+    private Button covid_admit;
+
+    @FXML
+    private Text covid_inform;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         citizenBorder.getStylesheets().add(getClass().getResource("css/citizen.css").toExternalForm());
@@ -72,7 +80,10 @@ public class citizenController implements Initializable {
 
     }
 
+    @FXML
+    void admit_covid(ActionEvent event) {
 
+    }
 
 
 }

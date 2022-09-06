@@ -63,9 +63,7 @@ public class LoginController {
         RoleDao roleDao = new RoleDao();
         if(flag && roleDao.getRoleByMail(mail))//复合格式并且邮箱在数据库里
         {
-            submitBtn.setVisible(false);
-            //这里曾经有个计时器
-            submitBtn.setVisible(true);
+            LoginPage.sta_person_mailBox = mail;
         }
 
         else {

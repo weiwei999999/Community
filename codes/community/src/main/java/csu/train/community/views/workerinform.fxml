@@ -8,7 +8,7 @@
 
 <AnchorPane fx:id="workerinformpage" prefHeight="628" prefWidth="849" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.workerinformController">
    <children>
-      <Button fx:id="workerinform" layoutX="679.0" layoutY="541.0" mnemonicParsing="false" text="发布新通知" />
+      <Button fx:id="workerinform" layoutX="679.0" layoutY="541.0" mnemonicParsing="false" onAction="#admit_inform" text="发布新通知" />
       <TextArea fx:id="content" layoutX="110.0" layoutY="168.0" prefHeight="259.0" prefWidth="433.0" />
       <AnchorPane layoutX="335.0" layoutY="68.0" prefHeight="200.0" prefWidth="200.0">
          <children>
