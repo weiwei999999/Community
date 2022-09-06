@@ -6,7 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.citizenController">
+<BorderPane fx:id="citizenBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.citizenController">
    <top>
       <TextField text="欢迎来到社区服务中心" BorderPane.alignment="CENTER" />
    </top>
@@ -22,6 +22,9 @@
                      <image>
                         <Image url="@../picture/Working.png" />
                      </image>
+                     <effect>
+                        <InnerShadow choke="1.0" color="#336699e5" height="255.0" radius="127.0" width="255.0" />
+                     </effect>
                   </ImageView>
                </children>
             </HBox>
@@ -36,6 +39,9 @@
                      <image>
                         <Image url="@../picture/Notice.png" />
                      </image>
+                     <effect>
+                        <InnerShadow color="#336699e5" />
+                     </effect>
                   </ImageView>
                </children>
             </HBox>
@@ -46,10 +52,13 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="113.0" prefWidth="130.0">
                <children>
-                  <ImageView fitHeight="123.0" fitWidth="145.0" opacity="0.74" preserveRatio="true">
+                  <ImageView fitHeight="123.0" fitWidth="145.0" mouseTransparent="true" opacity="0.74" preserveRatio="true">
                      <image>
                         <Image url="@../picture/Suggestion.png" />
                      </image>
+                     <effect>
+                        <InnerShadow color="#346799e7" />
+                     </effect>
                   </ImageView>
                </children>
             </HBox>

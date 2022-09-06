@@ -2,42 +2,42 @@ package csu.train.community.views;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 
-public class citizenController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class citizenController implements Initializable {
 
 
-    @FXML
-    private Button Appointment;
-
-    @FXML
-    private Button QuitCitizen;
-
-    @FXML
-    private Button Suggestion;
-
-    @FXML
-    private AnchorPane ViewNotice;
-
-    @FXML
-    private Button View;
     @FXML
     private Button exit;
     @FXML
     private AnchorPane mainview;
+    @FXML
+    private BorderPane citizenBorder;
     @FXML
     private ImageView central;
     @FXML
     private Button banshi;
 
     @FXML
-    private Button jianyi;
+    private Button progress;
 
     @FXML
     private Button tongzhi;
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        citizenBorder.getStylesheets().add(getClass().getResource("css/citizen.css").toExternalForm());
+
+    }
+
+
 
 
     @FXML
