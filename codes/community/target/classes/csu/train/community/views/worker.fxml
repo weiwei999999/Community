@@ -12,105 +12,11 @@
    <children>
       <BorderPane prefHeight="650.0" prefWidth="1000.0">
          <top>
-            <Text layoutX="1000.0" strokeType="OUTSIDE" strokeWidth="0.0" text="欢迎使用社区服务平台" wrappingWidth="998.3603515625" BorderPane.alignment="CENTER">
+            <Text layoutX="1000.0" strokeType="OUTSIDE" strokeWidth="0.0" text="                              欢迎使用社区服务平台" wrappingWidth="998.3603515625" BorderPane.alignment="CENTER">
                <rotationAxis>
                   <Point3D />
                </rotationAxis></Text>
          </top>
-         <left>
-            <StackPane fx:id="cebian" prefHeight="627.0" prefWidth="130.0" BorderPane.alignment="CENTER">
-               <children>
-                  <VBox alignment="CENTER_RIGHT" centerShape="false" prefHeight="585.0" prefWidth="151.0">
-                     <children>
-                        <HBox alignment="CENTER" prefHeight="107.0" prefWidth="150.0">
-                           <children>
-                              <StackPane prefHeight="105.0" prefWidth="150.0">
-                                 <children>
-                                    <Label contentDisplay="BOTTOM" text="发布通知" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
-                                    <ImageView fx:id="drop" fitHeight="107.0" fitWidth="107.0">
-                                       <image>
-                                          <Image url="@../picture/luyin.png" />
-                                       </image>
-                                    </ImageView>
-                                    <ImageView fitHeight="69.0" fitWidth="75.0">
-                                       <image>
-                                          <Image url="@../picture/tongzhi.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Button fx:id="information" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#inform" opacity="0.0" prefHeight="75.0" prefWidth="101.0" text="发布通知" />
-                                 </children>
-                              </StackPane>
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER" prefHeight="114.0" prefWidth="147.0">
-                           <children>
-                              <StackPane prefHeight="150.0" prefWidth="200.0">
-                                 <children>
-                                    <ImageView fitHeight="72.0" fitWidth="81.0">
-                                       <image>
-                                          <Image url="@../picture/shenqing.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Button fx:id="check" mnemonicParsing="false" onAction="#apply" opacity="0.0" prefHeight="71.0" prefWidth="110.0" text="审查申请" />
-                                    <Label text="办事申请" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
-                                 </children>
-                              </StackPane>
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER" prefHeight="112.0" prefWidth="159.0">
-                           <children>
-                              <StackPane prefHeight="150.0" prefWidth="200.0">
-                                 <children>
-                                    <ImageView fitHeight="61.0" fitWidth="66.0">
-                                       <image>
-                                          <Image url="@../picture/yiqingguanli.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Button fx:id="illness" mnemonicParsing="false" onAction="#illness" opacity="0.0" prefHeight="73.0" prefWidth="108.0" text="防疫调度" />
-                                    <Label text="防疫调度" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
-                                 </children>
-                              </StackPane>
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER" prefHeight="108.0" prefWidth="153.0">
-                           <children>
-                              <StackPane prefHeight="119.0" prefWidth="133.0">
-                                 <children>
-                                    <Label text="居民管理" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
-                                    <ImageView fitHeight="56.0" fitWidth="58.0">
-                                       <image>
-                                          <Image url="@../picture/chengjizhenjumin.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Button fx:id="residentManagement" mnemonicParsing="false" onAction="#resident" opacity="0.0" prefHeight="74.0" prefWidth="112.0" text="居民管理" />
-                                 </children>
-                              </StackPane>
-                           </children>
-                        </HBox>
-                        <Accordion />
-                        <HBox alignment="CENTER" prefHeight="113.0" prefWidth="155.0">
-                           <children>
-                              <StackPane prefHeight="150.0" prefWidth="200.0">
-                                 <children>
-                                    <ImageView fitHeight="57.0" fitWidth="68.0">
-                                       <image>
-                                          <Image url="@../picture/tuichu.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Button fx:id="out" mnemonicParsing="false" onAction="#out" opacity="0.0" prefHeight="83.0" prefWidth="111.0" text="退出" />
-                                    <Label text="退出" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
-                                 </children>
-                              </StackPane>
-                           </children>
-                        </HBox>
-                     </children>
-                     <effect>
-                        <Glow />
-                     </effect>
-                  </VBox>
-               </children>
-            </StackPane>
-         </left>
          <center>
             <AnchorPane fx:id="parent" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
@@ -120,9 +26,99 @@
                </children>
             </AnchorPane>
          </center>
+         <left>
+            <VBox fx:id="ssssss" alignment="CENTER_RIGHT" centerShape="false" prefHeight="585.0" prefWidth="151.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="107.0" prefWidth="150.0">
+                     <children>
+                        <StackPane prefHeight="105.0" prefWidth="150.0">
+                           <children>
+                              <Label contentDisplay="BOTTOM" text="发布通知" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
+                              <ImageView fx:id="drop" fitHeight="107.0" fitWidth="107.0">
+                                 <image>
+                                    <Image url="@../picture/luyin.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="69.0" fitWidth="75.0">
+                                 <image>
+                                    <Image url="@../picture/tongzhi.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="information" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#inform" opacity="0.0" prefHeight="75.0" prefWidth="101.0" text="发布通知" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="114.0" prefWidth="147.0">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="72.0" fitWidth="81.0">
+                                 <image>
+                                    <Image url="@../picture/shenqing.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="check" mnemonicParsing="false" onAction="#apply" opacity="0.0" prefHeight="71.0" prefWidth="110.0" text="审查申请" />
+                              <Label text="办事申请" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="112.0" prefWidth="159.0">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="61.0" fitWidth="66.0">
+                                 <image>
+                                    <Image url="@../picture/yiqingguanli.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="illness" mnemonicParsing="false" onAction="#illness" opacity="0.0" prefHeight="73.0" prefWidth="108.0" text="防疫调度" />
+                              <Label text="防疫调度" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="108.0" prefWidth="153.0">
+                     <children>
+                        <StackPane prefHeight="119.0" prefWidth="133.0">
+                           <children>
+                              <Label text="居民管理" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
+                              <ImageView fitHeight="56.0" fitWidth="58.0">
+                                 <image>
+                                    <Image url="@../picture/chengjizhenjumin.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="residentManagement" mnemonicParsing="false" onAction="#resident" opacity="0.0" prefHeight="74.0" prefWidth="112.0" text="居民管理" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <Accordion />
+                  <HBox alignment="CENTER" prefHeight="113.0" prefWidth="155.0">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="57.0" fitWidth="68.0">
+                                 <image>
+                                    <Image url="@../picture/tuichu.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="out" mnemonicParsing="false" onAction="#out" opacity="0.0" prefHeight="83.0" prefWidth="111.0" text="退出" />
+                              <Label text="退出" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </VBox>
+         </left>
 
 
       </BorderPane>
-      <ImageView fx:id="qiehuan2" fitHeight="628.0" fitWidth="849.0" layoutX="151.0" layoutY="-628.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="qiehuan2" fitHeight="628.0" fitWidth="806.0" layoutX="157.0" layoutY="-628.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

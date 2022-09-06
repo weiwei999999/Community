@@ -13,7 +13,14 @@
 {
     -fx-background-color: rgb(240,240,240);
 }
-#cebian
+#ssssss
 {
     -fx-background-color: rgb(131,175,155);
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+}
+.stackpane
+{
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
 }

@@ -37,6 +37,8 @@ public class workerpreventController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
         workerpreventpage.getStylesheets().add(getClass().getResource("css/meihua.css").toExternalForm());
+
+        
     }
 
 }

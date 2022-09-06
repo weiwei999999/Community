@@ -1,9 +1,15 @@
 csu\train\community\views\citizenController.class
 csu\train\community\HelloController.class
+csu\train\community\views\workercheckController.class
+csu\train\community\model\EmailSend.class
+csu\train\community\views\check.class
 csu\train\community\vo\Role.class
 csu\train\community\views\workerinformController.class
+csu\train\community\vo\UserInfo.class
+csu\train\community\dao\UserDAO.class
 csu\train\community\HelloApplication.class
 module-info.class
 csu\train\community\util\ConnectionUtil.class
+csu\train\community\dao\RoleDao.class
 csu\train\community\views\LoginController.class
 csu\train\community\views\LoginPage.class
