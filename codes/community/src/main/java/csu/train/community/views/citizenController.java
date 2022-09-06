@@ -1,4 +1,5 @@
 package csu.train.community.views;
+import csu.train.community.dao.RoleDao;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -82,7 +83,8 @@ public class citizenController implements Initializable {
 
     @FXML
     void admit_covid(ActionEvent event) {
-
+        RoleDao roleDao = new RoleDao();
+        covid_inform.setText( roleDao.readNoticeCovid() );
     }
 
 

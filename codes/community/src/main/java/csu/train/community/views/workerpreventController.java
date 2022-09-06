@@ -1,9 +1,12 @@
 package csu.train.community.views;
+import csu.train.community.dao.RoleDao;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 
 import java.net.URL;
@@ -34,11 +37,22 @@ public class workerpreventController implements Initializable {
     @FXML
     private TableView<?> waidi;
 
+    @FXML
+    private TextArea covid_text;
+
+    @FXML
+    private Button covid_admit_button;
+
+
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
         workerpreventpage.getStylesheets().add(getClass().getResource("css/meihua.css").toExternalForm());
-
-        
     }
 
+    @FXML
+    void covid_admit(ActionEvent event) {
+        String text = covid_text.getText();
+        RoleDao roleDao = new RoleDao();
+        roleDao.updateNoticeCovid(1, text);
+    }
 }

@@ -92,7 +92,7 @@
                            </effect>
                         </ImageView>
                         <Text fx:id="covid_inform" layoutX="14.0" layoutY="33.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="682.3603515625" />
-                        <Button fx:id="covid_admit" layoutX="733.0" layoutY="8.0" mnemonicParsing="false" onAction="#admit_covid" prefHeight="31.0" prefWidth="83.0" text="收到" />
+                        <Button fx:id="covid_admit" layoutX="661.0" layoutY="8.0" mnemonicParsing="false" onAction="#admit_covid" prefHeight="36.0" prefWidth="155.0" text="查看防疫通知" />
                      </children>
                   </AnchorPane>
                </children>

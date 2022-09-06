@@ -168,6 +168,40 @@ public class RoleDao {
         return m;
     }
 
+    //更新/更改 数据防疫公告的数据
+    public int updateNoticeCovid(int id, String name) {
+        int m = -1;
+        //删除行的SQL
+        String sql = "UPDATE covid_notice_data SET covid_notice_content = ? WHERE covid_notice_id = ?";
+        // 获取连接
+        Connection cn = ConnectionUtil.getConnection();
+        //声明语句对象
+        PreparedStatement pstmt = null;
+
+        try {
+            //预编译SQL
+            pstmt = cn.prepareStatement(sql);
+            //绑定SQL语句中?对应的参数
+            pstmt.setString(1, name);
+            pstmt.setInt(2, id);
+
+            //执行SQL
+            m = pstmt.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if(cn!=null) {
+                try {
+                    cn.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return m;
+    }
+
     //读取公告的数据
     public String readNotice() {
 
@@ -190,6 +224,44 @@ public class RoleDao {
 
             rs.next();//在getString前面得写这句
             inform = rs.getString("notice_content");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if(cn!=null) {
+                try {
+                    cn.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        //System.out.println(inform);
+        return inform;
+    }
+
+    //读取防疫公告数据
+    public String readNoticeCovid() {
+
+        String inform = "公告";
+        //删除行的SQL
+        String sql = "SELECT covid_notice_content FROM covid_notice_data WHERE covid_notice_id = 1";
+        // 获取连接
+        Connection cn = ConnectionUtil.getConnection();
+        //声明语句对象
+        PreparedStatement pstmt = null;
+        //声明结果集游标， 用于获取查询结果中的每一行数据
+        ResultSet rs = null;
+
+        try {
+            //预编译SQL
+            pstmt = cn.prepareStatement(sql);
+
+            //执行SQL
+            rs = pstmt.executeQuery();
+
+            rs.next();//在getString前面得写这句
+            inform = rs.getString("covid_notice_content");
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -325,7 +397,7 @@ public class RoleDao {
 
     public static void main(String[] args) {
         RoleDao roleDao = new RoleDao();
-        roleDao.readNotice();
+        //roleDao.updateNoticeCovid(1,"adc");
     }
 }
 
