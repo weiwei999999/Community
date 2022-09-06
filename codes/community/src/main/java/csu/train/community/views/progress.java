@@ -8,6 +8,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
 public class progress {
 
     @FXML
@@ -42,6 +45,12 @@ public class progress {
 
         }
 
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        doneLabel.getStylesheets().add(getClass().getResource("css/citizen.css").toExternalForm());
+        doingLabel.getStylesheets().add(getClass().getResource("css/citizen.css").toExternalForm());
+        nothingleftLabel.getStylesheets().add(getClass().getResource("css/citizen.css").toExternalForm());
     }
+}
+
 
 

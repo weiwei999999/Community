@@ -4,7 +4,9 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 //这是主页，轻易不要动，想动在群里说一下
 
 public class LoginPage extends Application {
@@ -15,15 +17,32 @@ public class LoginPage extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
+<<<<<<< HEAD
+       // <<<<<<< HEAD
+       AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("worker.fxml"));
+//=======
+       // AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("login.fxml"));
+//>>>>>>> 5b5dbd480e0e225b5163154bc341242865dd4129
+
+
+
+        //AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("worker.fxml"));
+
+      //  AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("login.fxml"));
+
+           stage.initStyle(StageStyle.TRANSPARENT);
+=======
        AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("login.fxml"));
 
 
 
       //  AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("login.fxml"));
 
+>>>>>>> 6e5e488eb24b2c0b78c9d3d342a1b05f618a2920
 
         Scene scene = new Scene(anchorPane);
-       // scene.getStylesheets().add(getClass().getResource("css/workermain.css").toExternalForm());//导入css样式表
+        scene.setFill(Paint.valueOf("#ffffff00"));
+       scene.getStylesheets().add(getClass().getResource("css/workermain.css").toExternalForm());//导入css样式表
 
         stage.setScene(scene);
 

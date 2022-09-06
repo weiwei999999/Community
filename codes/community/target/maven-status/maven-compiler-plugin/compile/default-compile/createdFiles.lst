@@ -1,12 +1,21 @@
 csu\train\community\views\citizenController.class
 csu\train\community\HelloController.class
+<<<<<<< HEAD
+csu\train\community\views\workercheckController.class
+csu\train\community\model\EmailSend.class
+csu\train\community\views\check.class
+=======
 csu\train\community\views\progress.class
+>>>>>>> 6e5e488eb24b2c0b78c9d3d342a1b05f618a2920
 csu\train\community\vo\Role.class
 csu\train\community\views\tongzhi.class
 csu\train\community\views\workerinformController.class
+csu\train\community\vo\UserInfo.class
+csu\train\community\dao\UserDAO.class
 csu\train\community\HelloApplication.class
 module-info.class
 csu\train\community\util\ConnectionUtil.class
+csu\train\community\dao\RoleDao.class
 csu\train\community\views\LoginController.class
 csu\train\community\views\LoginPage.class
 csu\train\community\views\banshi.class

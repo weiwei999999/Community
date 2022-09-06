@@ -50,6 +50,7 @@ public class workercheckController implements Initializable {
         checklist.getChildren().add(nolistjiemian);
 
     }
+    @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
         workercheckbutton.getStylesheets().add(getClass().getResource("css/buttonxiaoguo.css").toExternalForm());//导入css样式表

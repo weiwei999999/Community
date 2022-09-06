@@ -12,14 +12,14 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class WorkerController implements Initializable{
-    @FXML
-    private StackPane cebian;
+
 
     @FXML
     private ImageView drop;
@@ -48,14 +48,17 @@ public class WorkerController implements Initializable{
 
     @FXML
     private Button out;
+    @FXML
+    private VBox ssssss;
 
 
 
-   @Override
+
+    @Override
    public void initialize(URL url, ResourceBundle resourceBundle) {
        qiehuan2.setImage(ppt);
-       System.out.println(qiehuan2.getX()+qiehuan2.getY());
-       cebian.getStylesheets().add(getClass().getResource("css/meihua.css").toExternalForm());
+
+       ssssss.getStylesheets().add(getClass().getResource("css/meihua.css").toExternalForm());
 
     }
 
