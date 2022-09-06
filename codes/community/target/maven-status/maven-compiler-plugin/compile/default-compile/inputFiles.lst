@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\studyjavafx\gitRepo\Community\codes\community\src\main\java\csu\train\community\model\EmailSend.java
 D:\studyjavafx\gitRepo\Community\codes\community\src\main\java\csu\train\community\views\LoginController.java
 D:\studyjavafx\gitRepo\Community\codes\community\src\main\java\csu\train\community\views\workermanageController.java
@@ -19,3 +20,29 @@ D:\studyjavafx\gitRepo\Community\codes\community\src\main\java\csu\train\communi
 D:\studyjavafx\gitRepo\Community\codes\community\src\main\java\csu\train\community\views\workercheckController.java
 D:\studyjavafx\gitRepo\Community\codes\community\src\main\java\csu\train\community\HelloController.java
 D:\studyjavafx\gitRepo\Community\codes\community\src\main\java\csu\train\community\views\workercheckController3.java
+=======
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\househeader.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\workercheckController3.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\WorkerController.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\banshi.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\model\EmailSend.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\dao\UserDAO.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\progress.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\workerinformController.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\workercheckController2.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\LoginController.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\util\ConnectionUtil.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\workerpreventController.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\dao\RoleDao.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\HelloApplication.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\citizenController.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\HelloController.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\workercheckController4.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\LoginPage.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\vo\UserInfo.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\tongzhi.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\vo\Role.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\workercheckController.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\module-info.java
+D:\Training\gitfrommaster\Community\codes\community\src\main\java\csu\train\community\views\workermanageController.java
+>>>>>>> 6e5e488eb24b2c0b78c9d3d342a1b05f618a2920

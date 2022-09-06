@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.progress">
+   <children>
+      <ImageView fx:id="nothingleft" fitHeight="145.0" fitWidth="149.0" layoutX="226.0" layoutY="120.0" visible="false">
+         <image>
+            <Image url="@../picture/weiwancheng.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="doing" fitHeight="199.0" fitWidth="196.0" layoutX="202.0" layoutY="80.0" visible="false">
+         <image>
+            <Image url="@../picture/wodedaiban.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="done" fitHeight="173.0" fitWidth="170.0" layoutX="215.0" layoutY="106.0" visible="false">
+         <image>
+            <Image url="@../picture/yiwancheng2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="checking" layoutX="258.0" layoutY="285.0" mnemonicParsing="false" onAction="#checking" text="查询进度" />
+      <Label fx:id="nothingleftLabel" alignment="CENTER" layoutX="265.0" layoutY="38.0" prefHeight="53.0" prefWidth="103.0" text="无代办" visible="false" />
+      <Label fx:id="doingLabel" alignment="CENTER" layoutX="255.0" layoutY="28.0" prefHeight="53.0" prefWidth="103.0" text="进行中" visible="false" />
+      <Label fx:id="doneLabel" alignment="CENTER" layoutX="265.0" layoutY="38.0" prefHeight="53.0" prefWidth="96.0" text="已完成" visible="false" />
+   </children>
+</AnchorPane>

@@ -12,6 +12,7 @@ import java.util.List;
 
 public class RoleDao {
 
+    /**
     //添加角色
     public int addRole(String roleName) {
         //获取连接
@@ -44,7 +45,9 @@ public class RoleDao {
 
         return n;
     }
+     */
 
+    /**
     //删除数据
     public int deleteRole(int id) {
         int d = -1;
@@ -77,14 +80,15 @@ public class RoleDao {
         }
         return d;
     }
+     */
 
-    //通过id查询
-    public Role getRoleById(int id) {
+    //通过邮箱查询
+    public boolean getRoleByMail(String mail) {
         //获取连接
         Connection cn = ConnectionUtil.getConnection();
 
         //查找行的SQL
-        String sql = "SELECT id, role_name FROM role_info WHERE id = ?";
+        String sql = "SELECT user_id, user_mailBox FROM citizen_data WHERE user_mailBox = ?";
         //声明语句对象
         PreparedStatement pstmt = null;
         //声明结果集游标，用于获取查询结果中每一行数据
@@ -95,7 +99,7 @@ public class RoleDao {
             //预编译SQL
             pstmt = cn.prepareStatement(sql);
             //绑定SQL语句中?对应的参数
-            pstmt.setInt(1,id);
+            pstmt.setString(1,mail);
             //查询操作，返回结果集
             rs = pstmt.executeQuery();
 
@@ -106,10 +110,12 @@ public class RoleDao {
                 Role role = new Role();
 
                 //使用rs.getXxx(结果集中的字段名或索引)方法获取结果集中的列数据
-                role.setId(rs.getInt("id"));
-                role.setRoleName(rs.getString("role_name"));
+                role.setId(rs.getInt("user_id"));
+                role.setMailBox(rs.getString("user_mailBox"));
 
-                return role;
+                //System.out.println(role.getMailBox());
+
+                return true;
             }
 
         } catch (SQLException e) {
@@ -124,7 +130,7 @@ public class RoleDao {
                 }
             }
         }
-        return null;
+        return false;
     }
 
     //更新/更改 数据库中的数据
@@ -161,6 +167,7 @@ public class RoleDao {
         return m;
     }
 
+    /**
     //查询所有数据？
     public List<Role> getRoles() {
 
@@ -207,9 +214,11 @@ public class RoleDao {
         }
         return roleList;
     }
+     */
 
     public static void main(String[] args) {
         RoleDao roleDao = new RoleDao();
-        int m = roleDao.addRole("ABC");
+        roleDao.getRoleByMail("weiwei999weiwei@outlook.com");
     }
 }
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.banshi">
+   <children>
+      <Button fx:id="submit" layoutX="481.0" layoutY="334.0" mnemonicParsing="false" text="提交" />
+      <TextArea layoutX="61.0" layoutY="53.0" prefHeight="262.0" prefWidth="479.0" />
+      <Label layoutX="62.0" layoutY="14.0" text="申请内容" />
+      <Label layoutX="62.0" layoutY="334.0" prefHeight="30.0" prefWidth="380.0" text="Tip：请注明姓名，时间等信息" textFill="#1b0505" />
+   </children>
+</AnchorPane>

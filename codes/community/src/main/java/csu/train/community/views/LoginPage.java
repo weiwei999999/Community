@@ -17,6 +17,7 @@ public class LoginPage extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
+<<<<<<< HEAD
        // <<<<<<< HEAD
        AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("worker.fxml"));
 //=======
@@ -30,6 +31,14 @@ public class LoginPage extends Application {
       //  AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("login.fxml"));
 
            stage.initStyle(StageStyle.TRANSPARENT);
+=======
+       AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("login.fxml"));
+
+
+
+      //  AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("login.fxml"));
+
+>>>>>>> 6e5e488eb24b2c0b78c9d3d342a1b05f618a2920
 
         Scene scene = new Scene(anchorPane);
         scene.setFill(Paint.valueOf("#ffffff00"));

@@ -6,7 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="citizenBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.citizenController">
    <top>
       <TextField text="欢迎来到社区服务中心" BorderPane.alignment="CENTER" />
    </top>
@@ -22,12 +22,15 @@
                      <image>
                         <Image url="@../picture/Working.png" />
                      </image>
+                     <effect>
+                        <InnerShadow choke="1.0" color="#336699e5" height="255.0" radius="127.0" width="255.0" />
+                     </effect>
                   </ImageView>
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="68.0" prefWidth="157.0">
                <children>
-                  <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" text="预约办事" textAlignment="CENTER" />
+                  <Button fx:id="banshi" alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#change1" text="预约办事" textAlignment="CENTER" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="132.0" prefWidth="157.0">
@@ -36,31 +39,37 @@
                      <image>
                         <Image url="@../picture/Notice.png" />
                      </image>
+                     <effect>
+                        <InnerShadow color="#336699e5" />
+                     </effect>
                   </ImageView>
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="63.0" prefWidth="157.0">
                <children>
-                  <Button mnemonicParsing="false" text="查看通知" />
+                  <Button fx:id="tongzhi" mnemonicParsing="false" onAction="#change2" text="查看通知" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="113.0" prefWidth="130.0">
                <children>
-                  <ImageView fitHeight="123.0" fitWidth="145.0" opacity="0.74" preserveRatio="true">
+                  <ImageView fitHeight="123.0" fitWidth="145.0" mouseTransparent="true" opacity="0.74" preserveRatio="true">
                      <image>
                         <Image url="@../picture/Suggestion.png" />
                      </image>
+                     <effect>
+                        <InnerShadow color="#346799e7" />
+                     </effect>
                   </ImageView>
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="73.0" prefWidth="157.0">
                <children>
-                  <Button mnemonicParsing="false" text="反馈建议" />
+                  <Button fx:id="progress" mnemonicParsing="false" onAction="#change3" text="办事进度" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="70.0" prefWidth="157.0">
                <children>
-                  <Button mnemonicParsing="false" text="退出界面" />
+                  <Button fx:id="exit" mnemonicParsing="false" onAction="#out" text="退出界面" />
                </children>
             </HBox>
          </children>
@@ -71,9 +80,9 @@
          <content>
             <StackPane>
                <children>
-                  <AnchorPane prefHeight="1022.0" prefWidth="1590.0">
+                  <AnchorPane fx:id="mainview" prefHeight="1022.0" prefWidth="1590.0">
                      <children>
-                        <ImageView fitHeight="596.0" fitWidth="890.0" opacity="0.65">
+                        <ImageView fx:id="central" fitHeight="596.0" fitWidth="890.0" opacity="0.65">
                            <image>
                               <Image url="@../picture/R-C2.png" />
                            </image>
