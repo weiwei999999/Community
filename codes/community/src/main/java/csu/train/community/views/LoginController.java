@@ -17,7 +17,10 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import javax.mail.MessagingException;
 import java.io.IOException;
@@ -44,7 +47,10 @@ public class LoginController {
     private TextField email;
     @FXML
     private TextField postword;
+    @FXML
+    private VBox rcebian;
 
+    public String yanzhengma;
     @FXML
     void send(ActionEvent event) {
         boolean flag;
@@ -52,7 +58,7 @@ public class LoginController {
         String mail = email.getText();
         flag = mail.matches(correct);
         int ma = number();
-        String yanzhengma = String.valueOf(ma);
+        yanzhengma = String.valueOf(ma);
 
         try {
             new EmailSend().sentSimpleMail("验证码", yanzhengma, email.getText());
@@ -77,28 +83,32 @@ public class LoginController {
 
     @FXML
     void login(ActionEvent event) {
+     if(postword.getText().equals(yanzhengma))
 
-
-        if (model == 0) {
+     {if (model == 0) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "请选择职务");
             alert.show();
         }
-        if (model == 1) {
+        if (worker.isSelected()) {
             AnchorPane anchorPane = null;
             try {
+
                 anchorPane = FXMLLoader.load(this.getClass().getResource("worker.fxml"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
             Stage stage = new Stage();
             Scene scene = new Scene(anchorPane);
+            scene.setFill(Paint.valueOf("#ffffff00"));
+            scene.getStylesheets().add(getClass().getResource("css/workermain.css").toExternalForm());
 
             stage.setScene(scene);
             stage.setTitle("欢迎来到员工管理系统");
+            stage.initStyle(StageStyle.TRANSPARENT);
             stage.show();
             LoginPage.theStage.close();
         }
-        if (model == 2) {
+        if (citizen.isSelected()) {
             BorderPane borderPane = null;
             try {
                 borderPane = FXMLLoader.load(this.getClass().getResource("citizen.fxml"));
@@ -115,6 +125,13 @@ public class LoginController {
             LoginPage.theStage.close();
 
         }
+     }
+     else
+     {
+         Alert alert = new Alert(Alert.AlertType.ERROR, "验证码错误");
+         alert.show();
+
+     }
 
     }
 

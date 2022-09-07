@@ -15,7 +15,7 @@
       <TextField text="by  JavaFX实训小组" BorderPane.alignment="CENTER" />
    </bottom>
    <left>
-      <VBox prefHeight="578.0" prefWidth="157.0" BorderPane.alignment="CENTER">
+      <VBox fx:id="rcebian" prefHeight="578.0" prefWidth="157.0" BorderPane.alignment="CENTER">
          <children>
             <HBox alignment="CENTER" prefHeight="124.0" prefWidth="157.0">
                <children>

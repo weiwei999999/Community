@@ -12,11 +12,10 @@
         <columns>
           <TableColumn fx:id="waitren" prefWidth="75.0" text="申请人" />
           <TableColumn fx:id="waitwu" prefWidth="123.0" text="申请项目" />
-            <TableColumn fx:id="waittime" prefWidth="130.0" text="等待时长" />
             <TableColumn fx:id="waittofinish" prefWidth="75.0" text="通过" />
             <TableColumn fx:id="waittono" prefWidth="75.0" text="驳回" />
         </columns>
       </TableView>
-      <Button layoutX="696.0" layoutY="467.0" mnemonicParsing="false" text="保存修改" />
+      <Button fx:id="waitcun" layoutX="696.0" layoutY="467.0" mnemonicParsing="false" onAction="#waitcun" text="保存修改" />
    </children>
 </AnchorPane>

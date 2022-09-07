@@ -12,10 +12,9 @@
         <columns>
           <TableColumn fx:id="noren" prefWidth="75.0" text="申请人" />
           <TableColumn fx:id="nowu" prefWidth="131.0" text="申请项目" />
-            <TableColumn fx:id="noreason" prefWidth="162.0" text="驳回原因" />
             <TableColumn fx:id="notowait" prefWidth="140.0" text="发回待审" />
         </columns>
       </TableView>
-      <Button layoutX="724.0" layoutY="473.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="nocun" layoutX="724.0" layoutY="473.0" mnemonicParsing="false" onAction="#nocun" text="保存修改" />
    </children>
 </AnchorPane>
