@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="536.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.workercheckController4">
+   <children>
+      <TableView fx:id="notable" layoutX="71.0" layoutY="49.0" prefHeight="396.0" prefWidth="724.0">
+        <columns>
+          <TableColumn fx:id="noren" prefWidth="75.0" text="申请人" />
+          <TableColumn fx:id="nowu" prefWidth="131.0" text="申请项目" />
+            <TableColumn fx:id="notowait" prefWidth="140.0" text="发回待审" />
+        </columns>
+      </TableView>
+      <Button fx:id="nocun" layoutX="724.0" layoutY="473.0" mnemonicParsing="false" onAction="#nocun" text="保存修改" />
+   </children>
+</AnchorPane>
