@@ -1,3 +1,5 @@
+实训结束啦！！！！！！！！！！！
+
 实训文件库
 
 包名：csu.service.community
