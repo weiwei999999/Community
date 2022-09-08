@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="citizenBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csu.train.community.views.citizenController">
+   <top>
+      <TextField text="欢迎来到社区服务中心" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <TextField text="by  JavaFX实训小组" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <VBox fx:id="rcebian" prefHeight="578.0" prefWidth="157.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="124.0" prefWidth="157.0">
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="84.0">
+                     <image>
+                        <Image url="@../picture/Working.png" />
+                     </image>
+                     <effect>
+                        <InnerShadow choke="1.0" color="#336699e5" height="255.0" radius="127.0" width="255.0" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="68.0" prefWidth="157.0">
+               <children>
+                  <Button fx:id="banshi" alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#change1" text="预约办事" textAlignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="132.0" prefWidth="157.0">
+               <children>
+                  <ImageView fitHeight="87.0" fitWidth="95.0">
+                     <image>
+                        <Image url="@../picture/Notice.png" />
+                     </image>
+                     <effect>
+                        <InnerShadow color="#336699e5" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="157.0">
+               <children>
+                  <Button fx:id="tongzhi" mnemonicParsing="false" onAction="#change2" text="查看通知" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="113.0" prefWidth="130.0">
+               <children>
+                  <ImageView fitHeight="123.0" fitWidth="145.0" mouseTransparent="true" opacity="0.74" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/Suggestion.png" />
+                     </image>
+                     <effect>
+                        <InnerShadow color="#346799e7" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="157.0">
+               <children>
+                  <Button fx:id="progress" mnemonicParsing="false" onAction="#change3" text="办事进度" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="157.0">
+               <children>
+                  <Button fx:id="exit" mnemonicParsing="false" onAction="#out" text="退出界面" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <StackPane>
+               <children>
+                  <AnchorPane fx:id="mainview" prefHeight="1022.0" prefWidth="1590.0">
+                     <children>
+                        <ImageView fx:id="central" fitHeight="567.0" fitWidth="837.0" layoutY="-10.0" opacity="0.65">
+                           <image>
+                              <Image url="@../picture/R-C2.png" />
+                           </image>
+                           <effect>
+                              <Glow level="0.81" />
+                           </effect>
+                        </ImageView>
+                        <Text fx:id="covid_inform" layoutX="14.0" layoutY="33.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="682.3603515625" />
+                        <Button fx:id="covid_admit" layoutX="661.0" layoutY="8.0" mnemonicParsing="false" onAction="#admit_covid" prefHeight="36.0" prefWidth="155.0" text="查看防疫通知" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
