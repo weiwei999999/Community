@@ -1,3 +1,5 @@
+实训结束！！！
+
 实训文件库
 
 包名：csu.service.community
@@ -22,8 +24,3 @@ mingming
 =======
 确保能运行了再上传
 
-<<<<<<< HEAD
->>>>>>> b305ceb947d45a080328c2429cb8e08ec7005596
-=======
-test 20:50
->>>>>>> e43b8f4d4ca6e4e8ad4adba16643c71443c6ec34
